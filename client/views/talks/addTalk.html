@@ -1,0 +1,11 @@
+<template name="addTalk">
+  {{#autoForm id="addTalkForm" collection="Talks" type="insert"}}
+  <fieldset>
+    <legend>Новый доклад</legend>
+    {{> afQuickField name='title'}}
+    {{> afQuickField name='date' type='bootstrap-datepicker' }}
+    {{> afQuickField name='description' rows=6}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Сохранить</button>
+  {{/autoForm}}
+</template>

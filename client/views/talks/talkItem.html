@@ -1,0 +1,10 @@
+<template name="talkItem">
+  <div>
+    <h3>Название:<a href="{{pathFor route='talk'}}">{{title}}</a></h3>
+    <button class="delete">&times;</button>
+    <span>{{formatDate date 'short'}}</span>
+    <span><a href="#" class="upvote">↑</a> {{votes}} <a href="#" class="downvote">↓</a></span>
+    <br/>
+    <div>{{description}}</div>
+  </div>
+</template>

@@ -1,0 +1,14 @@
+<template name="talks">
+	<div class="pull-left">
+		{{#each talks}}
+		{{> talkItem}}
+		{{/each}}
+	</div>
+	<div class="pull-right">
+		{{> talksChart}}
+	</div>
+</template>
+
+<template name="talksChart">
+	<div id="chart" style="width:500px"></div>
+</template>
